@@ -6,8 +6,10 @@ import AuthPageContainer from "../AuthPageContainer";
 
 function App() {
   return (
-    // <CardList numbers={[]} />
+    <> 
+    {/* <CardList numbers={[]} /> */}
     <AuthPageContainer />
+    </>
   );
 }
 
