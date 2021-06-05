@@ -64,19 +64,19 @@ class CardListItem extends React.Component<TProps, TState> {
         <div className={style.div}>Добавка - белый соус</div>
         <p>{firstCount}</p>
         <button type="button" onClick={this.plusOne}>
-          Plus
+          Добавить
         </button>
         <button type="button" onClick={this.minusOne}>
-          Minus
+          Убрать
         </button>
 
         <div className={style.div}>Добавка - красный соус</div>
         <p>{secondCount}</p>
         <button type="button" onClick={this.plusSecond}>
-          Plus
+          Добавить
         </button>
         <button type="button" onClick={this.minusSecond}>
-          Minus
+          Убрать
         </button>
       </>
     ); 

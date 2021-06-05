@@ -1,6 +1,5 @@
 import React from "react";
 import CardListItem from "./CardListItem";
-// import "./style.css";
 import style from "./CardList.module.scss";
 
 type TState = {
@@ -39,7 +38,7 @@ class CardList extends React.Component<TProps, TState> {
       <>
         <h1 className={style.h1} style={{ color: "red" }}>
           {" "}
-          Магазин шурмы Восточные сказки
+          Магазин шаурмы Восточные сказки
         </h1>
 
         <div className={style.block}>
@@ -49,7 +48,7 @@ class CardList extends React.Component<TProps, TState> {
 
         <div>
           <button type="button" onClick={this.addItem}>
-            Добавить
+            Добавить ещё одну
           </button>
         </div>
 

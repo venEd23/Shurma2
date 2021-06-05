@@ -6,7 +6,7 @@ const AuthPage: FC = () => (
   <div className={style.auth_page_wrapper}>
     <h1 className={style.h1} style={{ color: "red" }}>
           {" "}
-          Магазин шурмы Восточные сказки
+          Магазин шаурмы Восточные сказки
         </h1>
     <AuthForm/>
     <footer className={style.footer}>
