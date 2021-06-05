@@ -1,6 +1,9 @@
 import React from "react";
 import CardListItem from "./CardListItem";
 import style from "./CardList.module.scss";
+import Footer from "../Common/Footer";
+import Header from "../Common/Header";
+import NavMenu from "../Common/NavElems";
 
 type TState = {
   numbers: Array<number>;
@@ -36,10 +39,9 @@ class CardList extends React.Component<TProps, TState> {
 
     return (
       <>
-        <h1 className={style.h1} style={{ color: "red" }}>
-          {" "}
-          Магазин шаурмы Восточные сказки
-        </h1>
+        <Header />
+        <NavMenu />
+
 
         <div className={style.block}>
           Ваш заказ
@@ -52,9 +54,7 @@ class CardList extends React.Component<TProps, TState> {
           </button>
         </div>
 
-        <footer className={style.footer}>
-          Стрелочные функции не имеют своего this (c) LearnJavascript
-        </footer>
+        <Footer />
       </>
     );
   }
