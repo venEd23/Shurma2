@@ -1,4 +1,6 @@
 import React, { FC, useState } from "react";
+import { useDispatch } from "react-redux";
+import { setUserLoginAction } from "../../../store/actions";
 import TextInput from "../../Form/TextInput";
 import style from "./AuthForm.module.scss";
 
@@ -7,12 +9,18 @@ const AuthForm: FC = () => {
   const [name, setName] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
+  const dispatch = useDispatch();
+
   const textInputHandler = (event: any) => {
     setLogin(event.currentTarget.value);
   };
 
   const passwordInputHandler = (event: any) => {
     setPassword(event.currentTarget.value);
+  };
+
+  const onsubmit = () => {
+    dispatch(setUserLoginAction(login));
   };
 
 
@@ -28,7 +36,7 @@ const AuthForm: FC = () => {
           placeholder="Password"
       />
         <button type="button" className={style.auth_form_btn} 
-        onClick={()=> console.log({login, password})}>
+        onClick={onsubmit}>
         Login
       </button>
     </div>
