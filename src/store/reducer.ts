@@ -1,28 +1,26 @@
 import { Actions } from "./actions";
 import { TReducer } from "./types";
 
-
 const initialState: TReducer = {
-    login: "",
+  login: "",
 };
 
-
 const reducer = (
-    state = initialState,
-    action: {
-        type: string;
-        payLoad: any;
-    }    
+  state = initialState,
+  action: {
+    type: string;
+    payload: any;
+  }
 ) => {
-    switch(action) {
-        case Actions.setUserLogin:
-            return {
-                ...state,
-                login: action.payLoad,
-            };
-        default:
-            return state;
-    }
+  switch (action.type) {
+    case Actions.setUserLogin:
+      return {
+        ...state,
+        login: action.payload,
+      };
+    default:
+      return state;
+  }
 };
 
 export default reducer;
