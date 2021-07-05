@@ -39,17 +39,21 @@ class CardList extends React.Component<TProps, TState> {
 
     return (
       <>
-        <Header />
-        <NavMenu />
-
+        <div className={style.both}>
+          <Header />
+          <NavMenu />
+        </div>
 
         <div className={style.block}>
-          Ваш заказ
+          Ваш заказ:
           {listItems}
         </div>
 
         <div>
-          <button type="button" onClick={this.addItem}>
+          <button
+            type="button"
+            className={style.addButton}
+            onClick={this.addItem}>
             Добавить ещё одну
           </button>
         </div>

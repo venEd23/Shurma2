@@ -57,9 +57,9 @@ class CardListItem extends React.Component<TProps, TState> {
 
      return (
       <>
-        <h3>Шурма номер {numberCount}</h3>
+        <h3>Шаурма номер {numberCount}</h3>
         <div>{title}</div>
-        <div className={style.div}>Основа - шурма свиная большая</div>
+        <div className={style.div}>Основа - шаурма свиная большая</div>
 
         <div className={style.div}>Добавка - белый соус</div>
         <p>{firstCount}</p>

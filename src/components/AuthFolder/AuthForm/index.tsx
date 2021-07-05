@@ -23,20 +23,18 @@ const AuthForm: FC = () => {
     dispatch(setUserLoginAction(login));
   };
 
-
   return (
     <div className={style.auth_form_wrapper}>
       <h3>Auth Form</h3>
-      <TextInput placeholder="Login" handler={setLogin}/>
-      <TextInput placeholder="Name" handler={setName}/>      
-      <input 
-          type="password" 
-          className={style.auth_form_input} 
-          onChange={passwordInputHandler}
-          placeholder="Password"
+      <TextInput placeholder="Login" handler={setLogin} />
+      <TextInput placeholder="Name" handler={setName} />
+      <input
+        type="password"
+        className={style.auth_form_input}
+        onChange={passwordInputHandler}
+        placeholder="Password"
       />
-        <button type="button" className={style.auth_form_btn} 
-        onClick={onsubmit}>
+      <button type="button" className={style.auth_form_btn} onClick={onsubmit}>
         Login
       </button>
     </div>
